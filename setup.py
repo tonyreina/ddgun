@@ -57,10 +57,10 @@ def task_1():
 
 
 def task_2():
-        www_uc30='http://wwwuser.gwdg.de/~compbiol/uniclust/2018_08/uniclust30_2018_08_hhsuite.tar.gz'
+        www_uc30='https://storage.googleapis.com/alphafold-databases/casp14_versions/uniclust30_2018_08_hhsuite.tar.gz'
         file_uc30='uniclust30_2018_08_hhsuite.tar.gz'
         cmd='cd '+prog_dir+'/data/;'
-        cmd=cmd+'wget -q '+www_uc30+';'
+        cmd=cmd+'wget '+www_uc30+';'
         cmd=cmd+'ls '+file_uc30
         out=getstatusoutput(cmd)
         if out[0]!=0:
